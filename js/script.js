@@ -4,26 +4,23 @@
 	var $btn = $('#data-btn');
 	var $code = $('.refresh-code');
 
-	// getCode();
-	var copy = 
+	// $code.on('click',function(e){
+	// 	getCode();
+	// })
 
-	$code.on('click',function(e){
-		getCode();
-	})
-
-	function getCode(){
-		$.ajax({
-			url:"http://lfsw.test.ebjcloud.com/redPacket/customer/getVerificationCode",
-			type:"get",
-			success:function(data){
-				var code = data;
-				$code.append(code);
-			},
-			error:function(data){
-				alert("验证码获取失败，请重新获取验证码！");
-			}
-		});
-	}
+	// function getCode(){
+	// 	$.ajax({
+	// 		url:"http://lfsw.test.ebjcloud.com/redPacket/customer/getVerificationCode",
+	// 		type:"get",
+	// 		success:function(data){
+	// 			var code = data;
+	// 			$code.append(code);
+	// 		},
+	// 		error:function(data){
+	// 			alert("验证码获取失败，请重新获取验证码！");
+	// 		}
+	// 	});
+	// }
 
 	$btn.on('click',function(e){
 		$.ajax({
