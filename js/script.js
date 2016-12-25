@@ -4,9 +4,13 @@
 	var $btn = $('#data-btn');
 	var $code = $('.refresh-code');
 
-	// $code.on('click',function(e){
-	// 	getCode();
-	// })
+	$code.on('click',function(e){
+		var link = $(this).attr("src");
+		$(this).attr('src',link);
+		var href = window.location.href;
+		window.location.href = href.substr(0,href.indexOf('#')) + '#' + link;
+		return false;
+	})
 
 	// function getCode(){
 	// 	$.ajax({
