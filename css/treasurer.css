@@ -70,8 +70,22 @@
 .treasurer .treasurer-data .data-btn > img {
   width: 100%;
 }
+.treasurer .treasurer-infor-bg {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  width: 92%;
+  height: 400px;
+  margin-top: -200px;
+  overflow: auto;
+  border-radius: 8px;
+  background-color: #ff0000;
+  padding: 21px 0;
+  box-sizing: border-box;
+}
 .treasurer .treasurer-information {
   width: 100%;
+  height: auto;
 }
 .treasurer .treasurer-information > img {
   width: 42%;
