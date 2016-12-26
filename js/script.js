@@ -37,12 +37,19 @@
 						alert(data.respMag);
 						break;
 					}
+					case "2222":{
+						alert(data.respMag);
+						break;
+					}
 					case "2225":{
 						alert(data.respMag);
 						break;
 					}
 					case "2224":{
 						alert(data.respMag.phone2);
+						break;
+					}
+					default:{
 						break;
 					}
 				}

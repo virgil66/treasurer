@@ -157,9 +157,11 @@
   text-align: center;
 }
 @media screen and (max-width: 320px) {
+  .treasurer .condition {
+    margin-top: -8px;
+  }
   .treasurer .condition .condition-row {
     font-size: 13px;
-    margin-bottom: 4px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 4px;
@@ -223,6 +225,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 10px;
     box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 14px;
@@ -237,15 +241,23 @@
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 12px;
   }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 4px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 4px;
+  }
   .treasurer .footer {
     font-size: 13px;
     margin-top: 16px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 375px) {
+  .treasurer .condition {
+    margin-top: -8px;
+  }
   .treasurer .condition .condition-row {
     font-size: 15px;
-    margin-bottom: 6px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 4px;
@@ -310,6 +322,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 10px;
     box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 17px;
@@ -324,15 +338,23 @@
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 15px;
   }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 4px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 4px;
+  }
   .treasurer .footer {
     font-size: 15px;
     margin-top: 16px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 414px) {
+  .treasurer .condition {
+    margin-top: -8px;
+  }
   .treasurer .condition .condition-row {
     font-size: 17px;
-    margin-bottom: 6px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 4px;
@@ -397,6 +419,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 10px;
     box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 15px;
@@ -411,15 +435,24 @@
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 13px;
   }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 4px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 4px;
+  }
   .treasurer .footer {
     font-size: 17px;
     margin-top: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 568px) {
+  .treasurer .condition {
+    margin-top: -14px;
+  }
   .treasurer .condition .condition-row {
     font-size: 21px;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 8px;
@@ -484,6 +517,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 21px 0;
     box-sizing: border-box;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 24px;
@@ -498,15 +533,24 @@
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 16px;
   }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 12px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 12px;
+  }
   .treasurer .footer {
     font-size: 18px;
     margin-top: 21px;
   }
 }
 @media screen and (min-width: 569px) and (max-width: 667px) {
+  .treasurer .condition {
+    margin-top: -16px;
+  }
   .treasurer .condition .condition-row {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 8px;
@@ -571,6 +615,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 44px 0;
     box-sizing: border-box;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 24px;
@@ -585,15 +631,24 @@
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 18px;
   }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 12px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 12px;
+  }
   .treasurer .footer {
     font-size: 21px;
     margin-top: 18px;
   }
 }
 @media screen and (min-width: 668px) and (max-width: 768px) {
+  .treasurer .condition {
+    margin-top: -22px;
+  }
   .treasurer .condition .condition-row {
     font-size: 30px;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 8px;
@@ -658,6 +713,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 44px 0;
     box-sizing: border-box;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 32px;
@@ -672,15 +729,24 @@
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 28px;
   }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 12px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 12px;
+  }
   .treasurer .footer {
     font-size: 30px;
     margin-top: 32px;
   }
 }
 @media screen and (min-width: 769px) {
+  .treasurer .condition {
+    margin-top: -21px;
+  }
   .treasurer .condition .condition-row {
     font-size: 41px;
-    margin-bottom: 18px;
+    margin-bottom: 2px;
   }
   .treasurer .treasurer-data .data-list {
     margin-bottom: 12px;
@@ -745,6 +811,8 @@
   .treasurer .treasurer-information .friends > table > thead > tr > th {
     padding: 44px 0;
     box-sizing: border-box;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
   .treasurer .treasurer-information .friends > table > thead > tr > th.big {
     font-size: 32px;
@@ -758,6 +826,12 @@
   }
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
     font-size: 28px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
+    border-bottom-left-radius: 12px;
+  }
+  .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-right {
+    border-bottom-right-radius: 12px;
   }
   .treasurer .footer {
     font-size: 41px;
