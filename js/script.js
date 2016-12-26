@@ -1,8 +1,9 @@
 ;(function($){
 
 	//点击提交按钮效果实现
-	var $btn = $('#data-btn');
+	var $btn = $('#data-btn .sign-up');
 	var $code = $('.refresh-code');
+	var $conBtn = $('#data-btn .activity');
 
 	$code.on('click',function(e){
 		var link = $(this).attr("src");
@@ -12,19 +13,23 @@
 		return false;
 	})
 
-	// function getCode(){
-	// 	$.ajax({
-	// 		url:"http://lfsw.test.ebjcloud.com/redPacket/customer/getVerificationCode",
-	// 		type:"get",
-	// 		success:function(data){
-	// 			var code = data;
-	// 			$code.append(code);
-	// 		},
-	// 		error:function(data){
-	// 			alert("验证码获取失败，请重新获取验证码！");
-	// 		}
-	// 	});
-	// }
+
+	$conBtn.on('click',function(e){
+		$('.treasurer-infor-bg-1')
+								.addClass('close-up')
+								.removeClass('close-down');
+	})
+
+
+	//点击close按钮，关闭活动内容模块
+	var $close = $('.treasurer-infor-bg-1 .close');
+
+	$close.on('click',function(e){
+		$(this)
+			.parents('.treasurer-infor-bg-1')
+			.addClass('close-down')
+			.removeClass('close-up');
+	})
 
 	$btn.on('click',function(e){
 		$.ajax({
