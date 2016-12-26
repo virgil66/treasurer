@@ -21,6 +21,9 @@
 		.condition-row{
 			.color(@white);
 			.text-al(center);
+			.yellow{
+				.color(@y_color);
+			}
 		}
 	}
 	.treasurer-hide-bg-1{
@@ -54,22 +57,50 @@
 		}
 		.data-btn{
 			.width-max();
-			>img{
-				.width-max();
+			.display(f);
+			.sign-up,
+			.activity{
+				.flex(1);
+				>img{
+					.width-max();
+				}
 			}
 		}
 	}
-	.treasurer-infor-bg{
-		.pos(abs);
-		.top(50%);
-		.left(4%);
-		.width(92%);
-		.height(400px);
-		.margin-tp(-200px);
-		overflow: auto;
-		.border-radius(8px);
-		.bgColor(red);
-		.padding(21px 0);
+	.treasurer-infor-bg-1{
+		.pos(fix);
+		.top(0);
+		.left(0);
+		.width-max();
+		.height(100%);
+		.treasurer-infor-bg-2{
+			.pos(abs);
+			.top(0);
+			.left(0);
+			.width-max();
+			.height(100%);
+			.bgColor(#000);
+			.opa(8);
+		}
+		.treasurer-infor-bg-3{
+			.pos(rel);
+			.top(50%);
+			.left(5%);
+			.width(90%);
+			.bgColor(@ta_bg);
+			.gift-box{
+				.pos(abs);
+				.left(50%);
+				>img{
+					.width-max();
+				}
+			}
+			.treasurer-infor-bg{
+				.width-max();
+				// .bgColor(@ta_bg);
+				overflow: auto;
+			}
+		}
 	}
 	.treasurer-information{
 		.width-max();
@@ -180,8 +211,28 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@sm_row * 2);
-				.border-radius(@sm_row);
+				.margin-tp(@sm_row * 3);
+				.sign-up{
+					.margin-rt(@sm_row * 2);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@sm_row);
+				}
+			}
+		}
+		.treasurer-infor-bg-3{
+			.margin-tp(-@sm_row * 50 + 15px);
+			.padding-tp(@md_size + 2px);
+			.border-radius(@sm_row);
+			.gift-box{
+				.width(@sm_size * 10 + 10px);
+				.top(-@md_size * 2 + 6px);
+				.margin-lt(-@md_size * 2 - 10px);
+			}
+			.treasurer-infor-bg{
+				.height(@md_size * 10 + 78px);
+				.padding-bm(@md_size - 10px);
 			}
 		}
 		.treasurer-information{
@@ -191,12 +242,12 @@
 				.friends-title{
 					.text-in(@sm_size - 1px);
 					>img{
-						.width(@md_size);
+						.width(@md_size - 9px);
 						.margin-rt(@sm_row + 2px);
-						.margin-tp(-@sm_row);
+						.margin-tp(@sm_row / 2);
 					}
 					>span{
-						.fontSize(@sm_size + 5px);
+						.fontSize(@sm_size + 2px);
 					}
 				}
 				.friends-content{
@@ -204,10 +255,10 @@
 					.margin-tp(@sm_row * 2);
 					.border-radius(@sm_row);
 					.friends-paragraph{
-						.fontSize(@sm_size);
+						.fontSize(@sm_size - 1px);
 						line-height: 1.5em;
 						.yellow{
-							.fontSize(@sm_size + 3px);
+							.fontSize(@sm_size + 1px);
 						}
 					}
 					.dotted{
@@ -288,18 +339,38 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@sm_row * 2);
-				.border-radius(@sm_row);
+				.margin-tp(@sm_row * 3);
+				.sign-up{
+					.margin-rt(@sm_row * 2);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@sm_row);
+				}
+			}
+		}
+		.treasurer-infor-bg-3{
+			.margin-tp(-@sm_row * 50 - 45px);
+			.padding-tp(@md_size + 12px);
+			.border-radius(@sm_row * 2);
+			.gift-box{
+				.width(@sm_size * 10 + 46px);
+				.top(-@md_size * 2 - 7px);
+				.margin-lt(-@sm_row * 22);
+			}
+			.treasurer-infor-bg{
+				.height(@sm_row * 100 + 100px);
+				.padding-bm(@md_size - 10px);
 			}
 		}
 		.treasurer-information{
 			.friends{
 				.margin-tp(@sm_size + 3px);
-				.padding(0 20px);
+				.padding(0 12px);
 				.friends-title{
 					.text-in(@sm_size + 5px);
 					>img{
-						.width(@md_size + 6px);
+						.width(@md_size - 2px);
 						.margin-rt(@sm_row + 2px);
 						.margin-tp(0);
 					}
@@ -313,7 +384,7 @@
 					.border-radius(@sm_row);
 					.bgColor(#e60000);
 					.friends-paragraph{
-						.fontSize(@sm_size + 2px);
+						.fontSize(@sm_size + 1px);
 						line-height: 1.5em;
 						.yellow{
 							.fontSize(@sm_size + 5px);
@@ -350,7 +421,7 @@
 								.fontSize(@sm_size + 4px);
 							}
 							>td.small{
-								.fontSize(@sm_size + 2px);
+								.fontSize(@sm_size - 1px);
 							}
 							>td.bottom-left{
 								border-bottom-left-radius: @sm_row;
@@ -397,9 +468,21 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@sm_row * 2);
-				.border-radius(@sm_row);
+				.margin-tp(@sm_row * 3);
+				.sign-up{
+					.margin-rt(@sm_row * 2);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@sm_row);
+				}
 			}
+		}
+		.treasurer-infor-bg{
+			.height(@sm_row * 100 + 76px);
+			.margin-tp(-@sm_row * 50 - 38px);
+			.border-radius(@sm_row * 2);
+			.padding(21px 0);
 		}
 		.treasurer-information{
 			.friends{
@@ -506,9 +589,21 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@sm_row * 4);
-				.border-radius(@sm_row);
+				.margin-tp(@sm_row * 5);
+				.sign-up{
+					.margin-rt(@sm_row * 4);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@sm_row);
+				}
 			}
+		}
+		.treasurer-infor-bg{
+			.height(@sm_row * 50 + 24px);
+			.margin-tp(-@sm_row * 25 - 12px);
+			.border-radius(@sm_row * 2);
+			.padding(21px 0);
 		}
 		.treasurer-information{
 			.friends{
@@ -615,9 +710,21 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@sm_row * 4);
-				.border-radius(@sm_row);
+				.margin-tp(@sm_row * 5);
+				.sign-up{
+					.margin-rt(@sm_row * 4);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@sm_row);
+				}
 			}
+		}
+		.treasurer-infor-bg{
+			.height(@sm_row * 50 + 48px);
+			.margin-tp(-@sm_row * 25 - 24px);
+			.border-radius(@sm_row * 2);
+			.padding(21px 0);
 		}
 		.treasurer-information{
 			.friends{
@@ -724,9 +831,21 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@sm_row * 4);
-				.border-radius(@md_size / 3);
+				.margin-tp(@sm_row * 5);
+				.sign-up{
+					.margin-rt(@sm_row * 4);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@md_size / 3);
+				}
 			}
+		}
+		.treasurer-infor-bg{
+			.height(@sm_row * 50 + 98px);
+			.margin-tp(-@sm_row * 25 - 49px);
+			.border-radius(@sm_row * 2);
+			.padding(21px 0);
 		}
 		.treasurer-information{
 			.friends{
@@ -833,9 +952,22 @@
 				}
 			}
 			.data-btn{
-				.margin-tp(@md_size - 6px);
-				.border-radius(@sm_size - 1px);
+				.margin-tp(@md_size);
+				.sign-up{
+					.margin-rt(@md_size - 6px);
+				}
+				.sign-up,
+				.activity{
+					.border-radius(@sm_size - 1px);
+				}
+
 			}
+		}
+		.treasurer-infor-bg{
+			.height(@sm_row * 100 + 98px);
+			.margin-tp(-@sm_row * 50 - 49px);
+			.border-radius(@sm_row * 3);
+			.padding(21px 0);
 		}
 		.treasurer-information{
 			.friends{

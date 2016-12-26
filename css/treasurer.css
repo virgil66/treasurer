@@ -21,6 +21,9 @@
   color: #ffffff;
   text-align: center;
 }
+.treasurer .condition .condition-row .yellow {
+  color: #fce84c;
+}
 .treasurer .treasurer-hide-bg-1 {
   width: 100%;
 }
@@ -66,22 +69,58 @@
 }
 .treasurer .treasurer-data .data-btn {
   width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
 }
-.treasurer .treasurer-data .data-btn > img {
+.treasurer .treasurer-data .data-btn .sign-up,
+.treasurer .treasurer-data .data-btn .activity {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  -ms-flex: 1;
+}
+.treasurer .treasurer-data .data-btn .sign-up > img,
+.treasurer .treasurer-data .data-btn .activity > img {
   width: 100%;
 }
-.treasurer .treasurer-infor-bg {
+.treasurer .treasurer-infor-bg-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.treasurer .treasurer-infor-bg-1 .treasurer-infor-bg-2 {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  filter: alpha(opacity=8);
+}
+.treasurer .treasurer-infor-bg-1 .treasurer-infor-bg-3 {
+  position: relative;
   top: 50%;
-  left: 4%;
-  width: 92%;
-  height: 400px;
-  margin-top: -200px;
+  left: 5%;
+  width: 90%;
+  background-color: #e93e0a;
+}
+.treasurer .treasurer-infor-bg-1 .treasurer-infor-bg-3 .gift-box {
+  position: absolute;
+  left: 50%;
+}
+.treasurer .treasurer-infor-bg-1 .treasurer-infor-bg-3 .gift-box > img {
+  width: 100%;
+}
+.treasurer .treasurer-infor-bg-1 .treasurer-infor-bg-3 .treasurer-infor-bg {
+  width: 100%;
   overflow: auto;
-  border-radius: 8px;
-  background-color: #ff0000;
-  padding: 21px 0;
-  box-sizing: border-box;
 }
 .treasurer .treasurer-information {
   width: 100%;
@@ -192,8 +231,30 @@
     border-radius: 4px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 8px;
+    margin-top: 12px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 8px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 4px;
+  }
+  .treasurer .treasurer-infor-bg-3 {
+    margin-top: -185px;
+    padding-top: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .treasurer .treasurer-infor-bg-3 .gift-box {
+    width: 140px;
+    top: -54px;
+    margin-left: -70px;
+  }
+  .treasurer .treasurer-infor-bg-3 .treasurer-infor-bg {
+    height: 378px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 16px;
@@ -204,12 +265,12 @@
     text-indent: 12px;
   }
   .treasurer .treasurer-information .friends .friends-title > img {
-    width: 30px;
+    width: 21px;
     margin-right: 6px;
-    margin-top: -4px;
+    margin-top: 2px;
   }
   .treasurer .treasurer-information .friends .friends-title > span {
-    font-size: 18px;
+    font-size: 15px;
   }
   .treasurer .treasurer-information .friends .friends-content {
     padding: 10px;
@@ -218,11 +279,11 @@
     border-radius: 4px;
   }
   .treasurer .treasurer-information .friends .friends-content .friends-paragraph {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5em;
   }
   .treasurer .treasurer-information .friends .friends-content .friends-paragraph .yellow {
-    font-size: 16px;
+    font-size: 14px;
   }
   .treasurer .treasurer-information .friends .friends-content .dotted {
     padding-bottom: 7px;
@@ -288,19 +349,41 @@
     border-radius: 8px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 8px;
+    margin-top: 12px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 8px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 4px;
+  }
+  .treasurer .treasurer-infor-bg-3 {
+    margin-top: -245px;
+    padding-top: 42px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  .treasurer .treasurer-infor-bg-3 .gift-box {
+    width: 176px;
+    top: -67px;
+    margin-left: -88px;
+  }
+  .treasurer .treasurer-infor-bg-3 .treasurer-infor-bg {
+    height: 500px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 16px;
-    padding: 0 20px;
+    padding: 0 12px;
     box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends .friends-title {
     text-indent: 18px;
   }
   .treasurer .treasurer-information .friends .friends-title > img {
-    width: 36px;
+    width: 28px;
     margin-right: 6px;
     margin-top: 0;
   }
@@ -315,7 +398,7 @@
     background-color: #e60000;
   }
   .treasurer .treasurer-information .friends .friends-content .friends-paragraph {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5em;
   }
   .treasurer .treasurer-information .friends .friends-content .friends-paragraph .yellow {
@@ -350,7 +433,7 @@
     font-size: 17px;
   }
   .treasurer .treasurer-information .friends > table > tbody > tr > td.small {
-    font-size: 15px;
+    font-size: 12px;
   }
   .treasurer .treasurer-information .friends > table > tbody > tr > td.bottom-left {
     border-bottom-left-radius: 4px;
@@ -385,8 +468,21 @@
     border-radius: 8px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 8px;
+    margin-top: 12px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 8px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 4px;
+  }
+  .treasurer .treasurer-infor-bg {
+    height: 476px;
+    margin-top: -238px;
+    border-radius: 8px;
+    padding: 21px 0;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 16px;
@@ -483,8 +579,21 @@
     border-radius: 8px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 16px;
+    margin-top: 20px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 16px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 4px;
+  }
+  .treasurer .treasurer-infor-bg {
+    height: 224px;
+    margin-top: -112px;
+    border-radius: 8px;
+    padding: 21px 0;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 32px;
@@ -581,8 +690,21 @@
     border-radius: 8px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 16px;
+    margin-top: 20px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 16px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 4px;
+  }
+  .treasurer .treasurer-infor-bg {
+    height: 248px;
+    margin-top: -124px;
+    border-radius: 8px;
+    padding: 21px 0;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 32px;
@@ -679,8 +801,21 @@
     border-radius: 10px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 16px;
+    margin-top: 20px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 16px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 10px;
+  }
+  .treasurer .treasurer-infor-bg {
+    height: 298px;
+    margin-top: -149px;
+    border-radius: 8px;
+    padding: 21px 0;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 32px;
@@ -777,8 +912,21 @@
     border-radius: 18px;
   }
   .treasurer .treasurer-data .data-btn {
-    margin-top: 24px;
+    margin-top: 30px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up {
+    margin-right: 24px;
+  }
+  .treasurer .treasurer-data .data-btn .sign-up,
+  .treasurer .treasurer-data .data-btn .activity {
     border-radius: 12px;
+  }
+  .treasurer .treasurer-infor-bg {
+    height: 498px;
+    margin-top: -249px;
+    border-radius: 12px;
+    padding: 21px 0;
+    box-sizing: border-box;
   }
   .treasurer .treasurer-information .friends {
     margin-top: 48px;
