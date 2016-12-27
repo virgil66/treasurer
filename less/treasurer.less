@@ -219,9 +219,64 @@ body{
 			}
 		}
 	}
+	.treasurer-code{
+		.width(30%);
+		.max-width(200px);
+		.margin-lt(35%);
+	}
 	.footer{
 		.color(@y_color);
 		.text-al(center);
+	}
+	.bomb-box{
+		.display(n);
+		.pos(fix);
+		.top(0);
+		.left(0);
+		.width-max();
+		.height(100%);
+		.bomb-box-bg{
+			.width-max();
+			.height(100%);
+			.bgColor(#000);
+			.opa(8);
+		}
+		.bomb-box-content{
+			.pos(abs);
+			.top(50%);
+			.left(50%);
+			.margin-lt(-125px);
+			.margin-tp(-75px);
+			.width(250px);
+			.height(auto);
+			.padding-bm(15px);
+			.bgColor(@white);
+			.border-radius(4px);
+			.bomb-success{
+				.width(115px);
+				.pos(rel);
+				.top(-43px);
+				.left(50%);
+				.margin-lt(-61px);
+			}
+			.bomb-box-paragraph{
+				.text-al(center);
+				.fontSize(16px);
+				.margin-tp(-30px);
+				.margin-bm(22px);
+				.padding(0 8px);
+			}
+			.bomb-box-btn{
+				.margin(0 auto);
+				.width(160px);
+				.line-height(40px);
+				.text-al(center);
+				.bgColor(#E33C0A);
+				.border-radius(4px);
+				.fontSize(18px);
+				.color(@white);
+			}
+		}
 	}
 }
 
@@ -236,6 +291,7 @@ body{
 			}
 		}
 		.treasurer-data{
+			.margin-tp(6px);
 			.data-list{
 				.margin-bm(@sm_row);
 				>input{
@@ -353,6 +409,9 @@ body{
 					.margin-tp(3px);
 				}
 			}
+		}
+		.treasurer-code{
+			.margin-tp(20px);
 		}
 		.footer{
 			.fontSize(@sm_size);
@@ -489,6 +548,9 @@ body{
 					.margin-tp(3px);
 				}
 			}
+		}
+		.treasurer-code{
+			.margin-tp(20px);
 		}
 		.footer{
 			.fontSize(@sm_size + 2px);
@@ -627,6 +689,9 @@ body{
 				}
 			}
 		}
+		.treasurer-code{
+			.margin-tp(20px);
+		}
 		.footer{
 			.fontSize(@sm_size + 4px);
 			.margin-tp(@sm_size + 3px);
@@ -762,6 +827,9 @@ body{
 					.margin-tp(3px);
 				}
 			}
+		}
+		.treasurer-code{
+			.margin-tp(20px);
 		}
 		.footer{
 			.fontSize(15px);
@@ -899,6 +967,9 @@ body{
 				}
 			}
 		}
+		.treasurer-code{
+			.margin-tp(20px);
+		}
 		.footer{
 			.fontSize(16px);
 			.margin-tp(10px);
@@ -906,7 +977,7 @@ body{
 	}
 }
 
-@media screen and (min-width: 668px) and (max-width: 768px){
+@media screen and (min-width: 668px) and (max-width: 767px){
 	.treasurer{
 		.condition{
 			// .margin-tp(-@sm_size + 2px);
@@ -1034,6 +1105,9 @@ body{
 					.margin-tp(3px);
 				}
 			}
+		}
+		.treasurer-code{
+			.margin-tp(20px);
 		}
 		.footer{
 			.fontSize(16px);
@@ -1171,6 +1245,9 @@ body{
 				}
 			}
 		}
+		.treasurer-code{
+			.margin-tp(40px);
+		}
 		.footer{
 			.fontSize(16px);
 			.margin-tp(12px);
@@ -1306,6 +1383,9 @@ body{
 					.margin-tp(16px);
 				}
 			}
+		}
+		.treasurer-code{
+			.margin-tp(40px);
 		}
 		.footer{
 			.fontSize(28px);
